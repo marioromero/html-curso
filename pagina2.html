@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+
+    <style>
+        label{
+            color: blue;
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .dimension-contenedor{
+             padding: 10px;
+            border-radius: 10px;           
+        }
+
+        #borde-form{
+            border: solid gray 2px;
+        }
+
+        #borde-parrafo{
+            border: solid red 2px;  
+        }
+
+        button{
+            height: 200px;
+            width: 200px;
+        }
+
+        #borde-parrafo button{
+            color: brown;
+        } 
+
+  
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Esta es la pagina 2</h1>
+
+    <div id="borde-form" class="dimension-contenedor">
+       <form action="procesar.php" method="post" >
+
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" value="" type="text">
+        <br>
+
+        <label for="">Marque las frutas que le gusten</label>
+        <input type="checkbox" value="Manzana">
+        <input type="checkbox" value="Pera">
+        <br>
+
+        <label for="">Indique su género</label>
+        <label for="M">
+            Masculino
+           <input id="M" name="genero" type="radio" value="M"> 
+        </label>
+        <label for="F">
+            Femenino
+            <input id="F" name="genero" type="radio" value="F">
+        </label>
+
+        <br>
+        <select name="" id="">
+            <option value="opt1">opcion 1</option>
+            <option value="opt2">opcion 2</option>
+            <option value="opt3">opcion 3</option>
+            <option value="opt4">opcion 4</option>
+
+        </select>
+
+        <br>
+        <label for="descripcion">Ingrese la descripcion</label>
+        <textarea cols="" rows="" name="descripcion" id="descripcion"></textarea>
+        
+        <br>
+        <input type="submit" value="Enviar">
+        <button id="miboton">Limpiar</button>
+
+    </form>     
+    </div>
+
+    <div id="borde-parrafo" class="dimension-contenedor">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, omnis fugiat nam eum dolorum quo expedita? Voluptate ipsum temporibus recusandae pariatur, quasi rem consequatur molestias repellat mollitia sequi, ipsa eius.</p>
+        <button id="miboton2">Chupa el perro</button>
+    </div>
+
+
+
+</body>
+</html>
+
